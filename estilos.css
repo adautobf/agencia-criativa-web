@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+}
+
+img {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 150px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: darksalmon;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    margin-left: 2%;
+    margin-top: 1%
+}
+
+ol {
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+li {
+    margin-bottom: 0.5%;
+    color: darkcyan;
+}
+
+h2 {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    color: darksalmon;
+}
+
+#painel {
+    margin-left: 2%;
+    width: 50vw;    
+    padding: 0;
+}
+
+p {
+    margin-top: 0.5%;
+    margin-left: 2%;
+    font-size: large;
+}
+
+h3 {
+    margin-left: 3%;
+    margin-top: 1%;
+    color: darkblue;
+}
+
+.dep {
+    margin-left: 4%;
+}
+
+.folder {
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+}
+
+header,
+section,
+footer {
+    border: 1px solid lightcoral;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px lightsalmon;
+}
+
+.organizar {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main   main   main   main"
+        "footer footer footer footer";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    margin-top: 1%;
+}
+
+#dg {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 10%;
+    color: darkcyan;
+}
+
+#dw {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 0;
+    color: darkcyan;
+}
+
+#bg {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-left: 0;
+    color: darkcyan;
+}
+
+#pm {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    margin-left: 0;
+    color: darkcyan;
+}
+
+#da {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    margin-left: 0;
+    color: darkcyan;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    main, header, footer {
+        width: 95%;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    #painel {
+        width: 30vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }    
+
+    main, header, footer {
+        width: 80%;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    #painel {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    main, header, footer {
+        width: 70%;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    #painel {
+        width: 50vw;
+    }
+}
+
+input {
+    display: block;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 25rem;
+}
+
+textarea {
+    display: block;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 25rem;
+}
+
+button {
+    margin-top: 2%;
+    margin-left: 2%;
+}
