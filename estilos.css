@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.div {
+.container {
     display: grid;
     grid-template-areas:
         "header header header header"
@@ -11,27 +11,30 @@
     min-height: 100vh;
 }
 
-.div__header {
-    grid-area: header;
+.box__estilo {
     border: 1px solid lightcoral;
     border-radius: 10px;
     box-shadow: 0 2px 5px lightsalmon;
+}
+
+.container__header {
+    grid-area: header;
     margin-top: 0.2rem;    
 }
 
-.div__title{
+.container__title{
     display: flex;
     align-items: center;
     gap: 10px;    
 }
 
-.div__logo {
+.container__logo {
     margin-top: 1%;
     margin-left: 1%;
     width: 150px;    
 }
 
-.div__logo__texto {
+.container__logo__texto {
     font-size: 3rem;
     color: darksalmon;    
 }
@@ -46,14 +49,8 @@
     color: darkcyan;    
 }
 
-.main {
+.corpo {
     grid-area: main;
-}
-
-.section {
-    border: 1px solid lightcoral;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px lightsalmon;
 }
 
 .section__title {
@@ -80,9 +77,6 @@
 
 .footer {
     grid-area: footer;
-    border: 1px solid lightcoral;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px lightsalmon;
     margin-bottom: 0.3rem;    
 }
 
@@ -158,10 +152,6 @@
     img {
         width: 100px;
     }
-
-    #painel {
-        width: 30vw;
-    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -176,10 +166,6 @@
     img {
         width: 120px;
     }
-
-    #painel {
-        width: 40vw;
-    }
 }
 
 @media (min-width: 901px) {
@@ -193,10 +179,6 @@
 
     img {
         width: 150px;
-    }
-
-    #painel {
-        width: 50vw;
     }
 }
 
