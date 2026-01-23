@@ -1,0 +1,59 @@
+@use 'variaveis';
+@use 'mixins';
+
+.nav__list {
+    margin-left: 2%;
+    margin-top: 1%
+}
+
+.nav__item {
+    margin-bottom: 0.5%;
+    @include mixins.cor-secundaria;
+}
+
+.botao {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 1%;
+
+    &__dg {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-left: 10%;
+        color: darkcyan;
+    }
+
+    &__dw {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-left: 0;
+        color: darkcyan;
+    }
+
+    &__bg {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        margin-left: 0;
+        color: darkcyan;
+    }
+
+    &__pm {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        margin-left: 0;
+        color: darkcyan;
+    }
+
+    &__da {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+        margin-left: 0;
+        color: darkcyan;
+    }
+}

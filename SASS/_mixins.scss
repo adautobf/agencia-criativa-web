@@ -1,0 +1,10 @@
+@use 'variaveis';
+
+@mixin cor-primaria {
+    color: variaveis.$cor-primaria;
+}
+
+@mixin cor-secundaria {
+    color: variaveis.$cor-secundaria;
+}
+

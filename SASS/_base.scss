@@ -1,0 +1,63 @@
+@use 'variaveis';
+@use 'mixins';
+
+* {
+    margin: 0;
+}
+
+.container__header {
+    grid-area: header;
+    margin-top: 0.2rem;
+}
+
+.container__title {
+    display: flex;
+    align-items: center;
+    gap: variaveis.$espacamento-padrao;
+}
+
+.container__logo {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 150px;
+
+    &__texto {
+        font-size: 3rem;
+        @include mixins.cor-primaria;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    margin-bottom: 0.3rem;    
+}
+
+
+.footer__title {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    @include mixins.cor-primaria;
+}
+
+
+.footer__texto {
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 1.5%;    
+}
+
+.paragrafo {
+    margin-top: 0.5%;
+    margin-left: 2%;
+    font-size: large;    
+}
+
+.paragrafo--depoimento {
+    margin-left: 4%;    
+}
+
+.article__title {
+    margin-left: 3%;
+    margin-top: 1%;
+    color: darkblue;    
+}
